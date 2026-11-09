@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f5f3">
+  <meta name="description" content="702 Recordings is an independent neoclassical and ambient music label and recording and mastering studio in Örebro, Sweden.">
+  <title>702 Recordings — Örebro, Sweden</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f4f5f3;
+      --ink: #191c1b;
+      --muted: #656b68;
+      --line: #cdd1ce;
+      --accent: var(--ink);
+      --font: "Manrope", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--font);
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+    .wrap { width: min(1120px, calc(100% - 48px)); margin-inline: auto; }
+    .site-header {
+      display: flex;
+      min-height: 92px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      border-bottom: 1px solid var(--line);
+    }
+    .wordmark { display: inline-flex; align-items: baseline; gap: 9px; font-size: 15px; font-weight: 800; text-decoration: none; }
+    .wordmark-number { color: var(--accent); font-size: 25px; letter-spacing: -.06em; }
+    .wordmark-name { font-size: 12px; letter-spacing: .1em; text-transform: uppercase; }
+    nav { display: flex; gap: clamp(18px, 3vw, 36px); }
+    nav a { color: var(--muted); font-size: 13px; font-weight: 600; text-decoration: none; transition: color .18s ease; }
+    nav a:hover { color: var(--accent); }
+    .hero { padding: clamp(72px, 12vw, 148px) 0 clamp(80px, 13vw, 156px); }
+    .logo-lockup { display: block; width: min(100%, 720px); height: auto; overflow: visible; }
+    .logo-lockup text { fill: var(--ink); }
+    .logo-lockup .logo-recordings { fill: var(--ink); }
+    .hero-copy { max-width: 700px; margin: 42px 0 0; font-size: clamp(25px, 4vw, 43px); font-weight: 500; line-height: 1.2; }
+    .hero-note { display: flex; align-items: center; gap: 12px; margin-top: 25px; color: var(--muted); font-size: 13px; }
+    .hero-note::before { width: 30px; height: 1px; background: var(--accent); content: ""; }
+    .content-section { display: grid; grid-template-columns: minmax(150px, .75fr) 2fr; gap: clamp(28px, 8vw, 100px); padding: 48px 0 58px; border-top: 1px solid var(--line); }
+    .section-label { margin: 5px 0 0; color: var(--accent); font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    h2 { margin: 0 0 23px; font-size: clamp(29px, 4vw, 42px); font-weight: 600; letter-spacing: -.045em; line-height: 1.12; }
+    .section-copy { max-width: 650px; margin: 0; color: var(--muted); font-size: 16px; line-height: 1.8; }
+    .studio-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; margin-top: 30px; }
+    .studio-item { padding-top: 16px; border-top: 2px solid var(--ink); }
+    .studio-item h3 { margin: 0 0 9px; font-size: 17px; font-weight: 700; }
+    .studio-item p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.7; }
+    .people { display: flex; flex-wrap: wrap; gap: 42px; }
+    .person-name { display: block; margin-bottom: 5px; font-size: 18px; font-weight: 700; }
+    .person-role { color: var(--muted); font-size: 13px; }
+    .contact-link { display: inline-block; margin-top: 3px; color: var(--accent); font-size: clamp(20px, 3vw, 27px); font-weight: 700; text-decoration-thickness: 1px; text-underline-offset: 5px; }
+    footer { display: flex; justify-content: space-between; gap: 20px; padding: 24px 0 34px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
+    footer p { margin: 0; }
+    @media (max-width: 640px) {
+      .wrap { width: min(100% - 36px, 1120px); }
+      .site-header { min-height: 76px; }
+      nav { gap: 15px; }
+      nav a { font-size: 12px; }
+      .hero { padding-top: 82px; }
+      .hero-copy { margin-top: 30px; }
+      .content-section { grid-template-columns: 1fr; gap: 22px; padding: 34px 0 42px; }
+      .section-label { margin: 0; }
+      .studio-grid { gap: 20px; }
+      footer { flex-direction: column; gap: 8px; }
+    }
+    @media (max-width: 390px) {
+      .wrap { width: calc(100% - 30px); }
+      .wordmark { gap: 6px; }
+      .wordmark-name { font-size: 10px; }
+      nav { gap: 11px; }
+      nav a { font-size: 11px; }
+      .studio-grid { grid-template-columns: 1fr; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="702 Recordings home">
+        <span class="wordmark-number">702</span>
+        <span class="wordmark-name">Recordings</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#studio">Studio</a>
+        <a href="#people">People</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <img class="logo-lockup" src="Logo.png" alt="702 Recordings" width="2500" height="1200">
+        <h1 class="hero-copy" id="hero-title">Neoclassical and ambient music, made with patience.</h1>
+        <p class="hero-note">Independent label and recording studio in Örebro, Sweden.</p>
+      </section>
+
+      <section class="content-section" id="about">
+        <p class="section-label">01 / About</p>
+        <div>
+          <h2>Music with room to breathe.</h2>
+          <p class="section-copy">702 Recordings is a boutique label for neoclassical and ambient music. We release a small number of records and give each one the time it needs. Founded in 2026 in Örebro, Sweden.</p>
+        </div>
+      </section>
+
+      <section class="content-section" id="studio">
+        <p class="section-label">02 / Studio</p>
+        <div>
+          <h2>Recording and mastering, with care.</h2>
+          <p class="section-copy">Our studio is open to artists on the label and to independent musicians, composers and producers.</p>
+          <div class="studio-grid">
+            <article class="studio-item">
+              <h3>Recording</h3>
+              <p>Piano, strings, voice and electronics, captured with care for room, space and silence.</p>
+            </article>
+            <article class="studio-item">
+              <h3>Mastering</h3>
+              <p>Careful, transparent mastering that preserves the dynamics and detail of quiet music.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" id="people">
+        <p class="section-label">03 / People</p>
+        <div class="people">
+          <div><span class="person-name">Antoni Yammin</span><span class="person-role">Co-founder</span></div>
+          <div><span class="person-name">David Wenngren</span><span class="person-role">Co-founder</span></div>
+        </div>
+      </section>
+
+      <section class="content-section" id="contact">
+        <p class="section-label">04 / Contact</p>
+        <div>
+          <h2>Have a project in mind?</h2>
+          <p class="section-copy">For demos, studio bookings and mastering enquiries, get in touch.</p>
+          <a class="contact-link" href="mailto:702recordings@gmail.com">702recordings@gmail.com</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 702 Recordings</p>
+      <p>Örebro, Sweden</p>
+    </footer>
+  </div>
+</body>
+</html>
