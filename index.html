@@ -61,7 +61,8 @@
     .studio-item { padding-top: 16px; border-top: 2px solid var(--ink); }
     .studio-item h3 { margin: 0 0 9px; font-size: 17px; font-weight: 700; }
     .studio-item p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.7; }
-    .adm-badge { display: block; width: min(220px, 100%); height: auto; margin: 18px 0 0; padding: 0; }
+    .adm-badge-space { width: 198px; height: 198px; margin-top: 18px; padding: 33px; }
+    .adm-badge { display: block; width: 132px; height: 132px; object-fit: contain; }
     .people { display: flex; flex-wrap: wrap; gap: 42px; }
     .person-name { display: block; margin-bottom: 5px; font-size: 18px; font-weight: 700; }
     .person-role { color: var(--muted); font-size: 13px; }
@@ -130,14 +131,16 @@
           <p class="section-copy">Our studio is open to artists on the label and to independent musicians, composers and producers.</p>
           <div class="studio-grid">
             <article class="studio-item">
-              <h3>Recording</h3>
-              <p>Piano, strings, voice and electronics, captured with care for room, space and silence.</p>
-            </article>
-            <article class="studio-item">
               <h3>Mastering</h3>
               <p>Careful, transparent mastering that preserves the dynamics and detail of quiet music.</p>
               <p>We’re on the Apple Digital Masters provider list.</p>
-              <img class="adm-badge" src="Apple-ADM-Plural-Album-Large.png" alt="Apple Digital Masters">
+              <div class="adm-badge-space">
+                <img class="adm-badge" src="Apple-ADM-Plural-Album-Large.png" alt="Apple Digital Masters">
+              </div>
+            </article>
+            <article class="studio-item">
+              <h3>Recording</h3>
+              <p>Piano, strings, voice and electronics, captured with care for room, space and silence.</p>
             </article>
           </div>
         </div>
